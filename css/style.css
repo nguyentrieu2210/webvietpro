@@ -1,0 +1,235 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color:#333;
+    background-color: #e7ecf4;
+}
+/* HEADER */
+#header{
+    background-color: #222222;
+}
+#logo,#search,#cart{
+    height:60px;
+}
+#logo{
+    display: flex;
+    align-items: center;
+}
+#logo img{
+    max-width: 100%;
+    height:auto;
+}
+#search{
+    display: flex;
+    align-items: center;
+}
+#search input{
+    height: 30px;
+    width: 275px;                                                                                                                       ;
+    line-height: 30px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    font-size: 13px;
+}
+#search button{
+    height: 30px;
+    font-size: 13px;
+    border-radius: 0 3px 3px 0;
+    background-color: #eb1f27;
+    color:#ffffff;
+    border:none;
+}
+#cart{
+    display: flex;
+    align-items: center;
+}
+#cart a{
+    position: absolute;
+    right:55px;
+    color:#ffffff;
+    text-decoration: none;
+}
+#cart span{
+    position: absolute;
+    right:15px;
+    display:inline-block;
+    height: 30px;
+    width:30px; 
+    border-radius: 100%;
+    background-color: #eb1f27;
+    color:#ffffff;
+    line-height: 30px;
+    text-align: center; 
+    margin-left: 8px;
+}
+/* END HEADER */
+/* BODY */
+.container{
+    position: relative;
+}
+#nav-mobile{
+    display: none;
+    position: absolute;
+    top:0;
+    right: 15px;
+}
+.navbar-toggler{
+    background-color:#ffffff;
+}
+#menu-mobile{
+    background-color: #e7ecf4;
+}
+#menu ul,#menu-mobile ul{
+    background-color: #eb1f27;
+    overflow: hidden;
+    padding:0;
+}
+#menu .menu-item, #menu-mobile ul .menu-item{
+    list-style: none;
+    height:40px;
+    line-height: 40px;
+    padding:0 12px;
+    cursor: pointer;
+}
+#menu-mobile ul .menu-item{
+    border: 1px solid #c60a11;
+}
+#menu .menu-item{
+    float: left;
+    border-right:1px solid #c60a11;
+}
+#menu .menu-item a,#menu-mobile .menu-item a{
+    color:#ffffff;
+    text-decoration: none;
+
+}
+#menu .menu-item:hover,#menu-mobile ul .menu-item:hover{
+    background-color: #c60a11;
+}
+.row.content{
+    margin-top:-5px;
+    margin-bottom: 20px;
+}
+#main-item .row.product-item{
+    margin-left: -5px;
+    margin-right: -5px;
+}
+#main-item .col-lg-4.item,.col-md-4.item,.col-sm-12.item{
+    padding-left:5px;
+    padding-right:5px;
+    margin-bottom: 10px;
+}
+.slide,.slide img{
+    width: 100%;
+    max-width:100%;
+    height: auto;
+}
+#main-item h3{
+    font-size: 18px;
+    font-weight:bold; 
+    padding: 20px 0 15px;
+    margin-bottom: 0;
+}
+#main-item h3.title{
+    padding: 10px 0 15px;
+}
+.product{
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
+.product img{
+    display: block;
+    width:140px;
+    height:190px;
+    margin:8px auto;
+    
+}
+.product h4{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+.product p{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.product p span{
+    color:#eb1f27;
+    font-weight: bold;
+}
+.banner, .banner img{
+    height: auto;
+    max-width: 100%;
+   width:100%;
+}
+.banner{
+    margin-bottom: 10px;
+}
+/* END BODY */
+/* FOOTER TOP  */
+#footer-t{
+    height: auto;
+    background-color: #ffffff;
+}
+.logo-footer,.footer-address,.footer-service,.footer-hotline{
+    margin: 25px 0 30px;
+}
+.logo-footer{
+    margin-bottom: 0;
+}
+#footer-t .footer-introduct p{
+    padding-top: 15px;
+    margin-bottom: 30px;
+}
+#footer-t h3{
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+/* END FOOTER TOP  */
+/* FOOTER BOTTOM  */
+#footer-b{
+    background-color: #1d1e24;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+#footer-b p{
+    color:#78838c;
+}
+/* END FOOTER BOTTOM  */
+@media(max-width:992px){
+    #aside{
+        display: none;
+    }   
+}
+@media(max-width:768px) {
+    .slide{
+        display: none;
+    }
+    #menu .menu-item{
+        float:none;
+        border-right: none;
+        border-bottom: 1px solid #c60a11;
+    }
+    #menu{
+        display: none;
+    }
+    #nav-mobile{
+        display: inline-block;
+    }
+    #menu-mobile{
+        display: block;
+    }
+    #cart a, #cart span{
+        position: static;
+    }
+}
+@media(max-width:576px){
+    #nav-mobile{
+        display: inline-block;
+    }
+}
